@@ -1,13 +1,13 @@
-password = 'Собачий клюв'
+password = 'Your password'
 
 def ask_passsword():
     a = input()
-    if a == 'Собачий клюв':
+    if a == 'Your password':
         print(password)
 for i in reversed(range(3)):
-    a = input("Введите пароль: ")
-    if a == 'Собачий клюв':
-        print("Пароль принят ")
+    a = input("Enter the password: ")
+    if a == 'Your password':
+        print("Password accepted ")
         break
 else:
-    print("В доступе отказано ")
+    print("Access denied ")
