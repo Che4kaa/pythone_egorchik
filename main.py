@@ -1,13 +1,10 @@
-password = 'Your password'
+student = ("Michael", "20", "excellent student")
 
-def ask_passsword():
-    a = input()
-    if a == 'Your password':
-        print(password)
-for i in reversed(range(3)):
-    a = input("Enter the password: ")
-    if a == 'Your password':
-        print("Password accepted ")
-        break
-else:
-    print("Access denied ")
+print(student.count("Michael"))
+print(student.index("excellent student"))
+
+for x in student:
+    print(x)
+
+if "Michael" in student:
+    print("Michael is here!")
